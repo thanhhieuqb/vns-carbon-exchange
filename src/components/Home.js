@@ -1,4 +1,3 @@
-import { ethers } from 'ethers';
 import { useEffect, useState } from 'react';
 
 import close from '../assets/close.svg';
