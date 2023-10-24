@@ -1,32 +1,28 @@
-# Real Estate NFT DApp
+# Carbon Credit NFT dApp
 
-## Technology Stack & Tools
+## Tech Stack 
 
-- Solidity (Writing Smart Contracts & Tests)
 - Javascript (React & Testing)
+- [React.js](https://reactjs.org/) (Frontend Framework)
+- Solidity (Writing Smart Contracts & Tests)
 - [Hardhat](https://hardhat.org/) (Development Framework)
 - [Ethers.js](https://docs.ethers.io/v5/) (Blockchain Interaction)
-- [React.js](https://reactjs.org/) (Frontend Framework)
-
-## Requirements For Initial Setup
-- Install [NodeJS](https://nodejs.org/en/)
 
 ## Setting Up
-### 1. Clone/Download the Repository
+### 1. Install Dependencies:
+`npm install`
 
-### 2. Install Dependencies:
-`$ npm install`
+### 2. Start frontend
+`npm run start`
 
 ### 3. Run tests
-`$ npx hardhat test`
+`npx hardhat test`
 
 ### 4. Start Hardhat node
-`$ npx hardhat node`
+`npx hardhat node`
 
 ### 5. Run deployment script
 In a separate terminal execute:
-`$ npx hardhat run ./scripts/deploy.js --network localhost`
 
-### 7. Start frontend
-`$ npm run start`
+`npx hardhat run scripts/deploy.js --network [network]`
 

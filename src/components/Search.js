@@ -5,7 +5,7 @@ const Search = () => {
             <input
                 type="text"
                 className="header__search"
-                placeholder="Enter an address, neighborhood, city, or ZIP code"
+                placeholder="Enter credit id..."
             />
         </header>
     );
