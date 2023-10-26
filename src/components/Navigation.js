@@ -1,5 +1,5 @@
 import { ethers } from 'ethers';
-import logo from '../assets/logo.svg';
+import logo from '../assets/vns-carbon-exchange-logo.png';
 
 const Navigation = ({ account, setAccount }) => {
     const connectHandler = async () => {
@@ -15,7 +15,6 @@ const Navigation = ({ account, setAccount }) => {
 
             <div className='nav__brand'>
                 <img src={logo} alt="Logo" />
-                <h1>VNS Carbon Exchange</h1>
             </div>
 
             {account ? (
