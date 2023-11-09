@@ -3,10 +3,10 @@
 ## Tech Stack 
 
 - Javascript (React & Testing)
-- [React.js](https://reactjs.org/) (Frontend Framework)
-- Solidity (Writing Smart Contracts & Tests)
-- [Hardhat](https://hardhat.org/) (Development Framework)
-- [Ethers.js](https://docs.ethers.io/v5/) (Blockchain Interaction)
+- [React.js](https://reactjs.org) (Frontend Framework)
+- [Solidity](https://soliditylang.org) (Writing Smart Contracts & Tests)
+- [Hardhat](https://hardhat.org) (Development Framework)
+- [Ethers.js](https://docs.ethers.io/v5) (Blockchain Interaction)
 
 ## Setting Up
 ### 1. Install Dependencies:
