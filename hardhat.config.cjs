@@ -4,13 +4,13 @@ require('dotenv').config();
 /** @type import('hardhat/config').HardhatUserConfig */
 const { API_URL, PRIVATE_KEY} = process.env;
 module.exports = {
-  solidity: "0.8.17",
+  solidity: "0.8.1",
   defaultNetwork: "sepolia",
   networks: {
     hardhat: {},
     sepolia: {
       url: API_URL,
-      accounts: [PRIVATE_KEY],
+      accounts: [`0x${PRIVATE_KEY}`],
     },
   },
   etherscan: {

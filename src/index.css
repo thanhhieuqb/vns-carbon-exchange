@@ -17,6 +17,13 @@
 
 body {
   margin: 0;
+  display: grid;
+  grid-column: full;
+  grid-template-columns: inherit;
+  position: relative;
+  background-image: url("./assets/vnscarbon-background.png");
+  background-position: center;
+  background-size: cover;
   font-family: "Open Sans";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -98,11 +105,7 @@ nav {
 /* -- HEADER -- */
 
 header {
-  background-image: url("./assets/jungle.jpg");
-  background-position: center;
-  background-size: cover;
   min-height: 40vh;
-
   position: relative;
 }
 

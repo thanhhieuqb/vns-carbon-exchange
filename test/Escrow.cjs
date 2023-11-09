@@ -18,7 +18,7 @@ describe('Escrow', () => {
         carbonCredit = await CarbonCredit.deploy()
 
         // Mint 
-        let transaction = await carbonCredit.connect(seller).mint("https://ipfs.io/ipfs/QmTudSYeM7mz3PkYEWXWqPjomRPHogcMFSq7XAvsvsgAPS")
+        let transaction = await carbonCredit.connect(seller).mint("ipfs://bafybeig37ioir76s7mg5oobetncojcm3c3hxasyd4rvid4jqhy4gkaheg4")
         await transaction.wait()
 
         // Deploy Escrow
