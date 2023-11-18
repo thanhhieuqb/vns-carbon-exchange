@@ -124,11 +124,6 @@ const Credit = ({ credit, provider, account, escrow, togglePop }) => {
                 </div>
                 <div className="credit__overview">
                     <h1>{credit.name}</h1>
-                    <p>
-                        <strong>{credit.attributes[2].value}</strong> land |
-                        <strong>{credit.attributes[3].value}</strong> temp |
-                        <strong>{credit.attributes[4].value}</strong> area
-                    </p>
                     <p>{credit.address}</p>
 
                     <h2>{credit.attributes[5].value} Credits</h2>
@@ -174,6 +169,13 @@ const Credit = ({ credit, provider, account, escrow, togglePop }) => {
                     <hr />
 
                     <h2>Facts and features</h2>
+
+                    <ul>
+                        {credit.attributes.map((attribute, index) => (
+                            <li key={index}><strong>{attribute.trait_type}</strong> : {attribute.value}</li>
+                        ))}
+                    </ul>
+                    <h2>Source</h2>
 
                     <ul>
                         {credit.attributes.map((attribute, index) => (
