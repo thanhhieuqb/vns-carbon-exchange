@@ -81,7 +81,7 @@ try {
                 <img src={credit.image} alt="Credit" />
               </div>
               <div className='card__info'>
-                <h4>{credit.attributes[0].value} ETH</h4>
+                <h4>{credit.attributes[5].value} Credits</h4>
                 <p>{credit.address}</p>
               </div>
             </div>
