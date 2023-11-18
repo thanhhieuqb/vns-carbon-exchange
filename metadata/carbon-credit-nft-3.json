@@ -1,0 +1,33 @@
+{
+    "name": "Vuon vai thieu luc ngan",
+    "address": "Bac Giang, Viet Nam",
+    "description": "Khi hau nhiet doi gio mua, mua dong khi hau kho, lanh; mua he khi hau nong, am.",
+    "image": "https://ipfs.io/ipfs/QmUJboYNBr4TNk8RjuVbKXZgVv3pVjLgakcYhVuk3HwfRG/carbon-credit-nft-3.png",
+    "id": "3",
+    "attributes": [
+        {
+            "trait_type": "Area (ha)",
+            "value": 80000
+        },
+        {
+            "trait_type": "Land",
+            "value": "Basalt soil"
+        },
+        {
+            "trait_type": "Temperature (Celcius)",
+            "value": "23-24"
+        },
+        {
+            "trait_type": "Fertilizer",
+            "value": "Foliar, organic, microbial"
+        },
+        {
+            "trait_type": "Production quantity (tons/year)",
+            "value": 592000
+        },
+        {
+            "trait_type": "Amount of Credits",
+            "value": 40000
+        }
+    ]
+}

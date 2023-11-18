@@ -7,7 +7,7 @@ const tokens = (n) => {
 
 describe('Escrow', () => {
     let buyer, seller, inspector, lender
-    let carbonCredit, escrow
+    let carbonCredit, escrow, signer
 
     beforeEach(async () => {
         // Setup accounts
@@ -17,10 +17,10 @@ describe('Escrow', () => {
         const CarbonCredit = await ethers.getContractFactory('CarbonCredit')
         carbonCredit = await CarbonCredit.deploy()
 
-        // Mint 
-        let transaction = await carbonCredit.connect(seller).mint("ipfs://bafybeig37ioir76s7mg5oobetncojcm3c3hxasyd4rvid4jqhy4gkaheg4")
+        // Mint  
+        let transaction = await carbonCredit.connect(seller).mint("https://ipfs.io/ipfs/bafybeif4qnyekrf2coh4qf6fkvswpagwwiwot4hi5tdqg7p5a2wjtubqma")
         await transaction.wait()
-
+        
         // Deploy Escrow
         const Escrow = await ethers.getContractFactory('Escrow')
         escrow = await Escrow.deploy(
@@ -147,6 +147,7 @@ describe('Escrow', () => {
             transaction = await escrow.connect(lender).approveSale(1)
             await transaction.wait()
 
+            await signer.sendTransaction({ to: escrow.address, value: tokens(5) })
             await lender.sendTransaction({ to: escrow.address, value: tokens(5) })
 
             transaction = await escrow.connect(seller).finalizeSale(1)

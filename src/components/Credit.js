@@ -125,9 +125,9 @@ const Credit = ({ credit, provider, account, escrow, togglePop }) => {
                 <div className="credit__overview">
                     <h1>{credit.name}</h1>
                     <p>
-                        <strong>{credit.attributes[2].value}</strong> bds |
-                        <strong>{credit.attributes[3].value}</strong> ba |
-                        <strong>{credit.attributes[4].value}</strong> sqft
+                        <strong>{credit.attributes[2].value}</strong> land |
+                        <strong>{credit.attributes[3].value}</strong> temp |
+                        <strong>{credit.attributes[4].value}</strong> area
                     </p>
                     <p>{credit.address}</p>
 

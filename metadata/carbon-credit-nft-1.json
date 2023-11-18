@@ -1,0 +1,33 @@
+{
+    "name": "Khu Rung Nam Cat Tien",
+    "address": "Lam Dong, Viet Nam",
+    "description": "Khi hau on doi ngay trong vung khi hau nhiet doi.",
+    "image": "https://ipfs.io/ipfs/QmUJboYNBr4TNk8RjuVbKXZgVv3pVjLgakcYhVuk3HwfRG/carbon-credit-nft-1.png",
+    "id": "1",
+    "attributes": [
+        {
+            "trait_type": "Area (ha)",
+            "value": 500
+        },
+        {
+            "trait_type": "Land",
+            "value": "Limestone soil, granite soil, basalt soil"
+        },
+        {
+            "trait_type": "Temperature (Celcius)",
+            "value": "16-24"
+        },
+        {
+            "trait_type": "Humidity",
+            "value": "80 - 85%"
+        },
+        {
+            "trait_type": "Precipitation",
+            "value": "2000 - 3000mm/year"
+        },
+        {
+            "trait_type": "Amount of Credits",
+            "value": 9500
+        }
+    ]
+}

@@ -1,29 +1,26 @@
 import { useEffect, useState } from 'react';
 import { ethers } from 'ethers';
-
 import Navigation from './components/Navigation.js';
-import Search from './components/Search.js';
 import Credit from './components/Credit.js';
-
-import CarbonCredit from './abis/CarbonCredit.json'
-import Escrow from './abis/Escrow.json'
-
+import CarbonCredit from './abis/CarbonCredit.json';
+import Escrow from './abis/Escrow.json';
 import config from './config.json';
 
 function App() {
   const [provider, setProvider] = useState(null)
   const [escrow, setEscrow] = useState(null)
-
   const [account, setAccount] = useState(null)
-
   const [credits, setCredits] = useState([])
   const [credit, setCredit] = useState({})
   const [toggle, setToggle] = useState(false);
 
   const loadBlockchainData = async () => {
 try {
-      const provider = new ethers.providers.Web3Provider(window.ethereum)
-      setProvider(provider)
+      await window.ethereum.enable();
+
+      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      setProvider(provider);
+
       const network = await provider.getNetwork()
       const chainId = network.chainId;
 
@@ -70,7 +67,6 @@ try {
   return (
     <div>
       <Navigation account={account} setAccount={setAccount} />
-      <Search />
 
       <div className='cards__section'>
 
@@ -86,11 +82,6 @@ try {
               </div>
               <div className='card__info'>
                 <h4>{credit.attributes[0].value} ETH</h4>
-                <p>
-                  <strong>{credit.attributes[2].value}</strong> bds |
-                  <strong>{credit.attributes[3].value}</strong> ba |
-                  <strong>{credit.attributes[4].value}</strong> sqft
-                </p>
                 <p>{credit.address}</p>
               </div>
             </div>

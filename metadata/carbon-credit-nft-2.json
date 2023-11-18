@@ -1,0 +1,33 @@
+{
+    "name": "Vuon dua dua giong trom",
+    "address": "Giong Trom, Ben Tre, Viet Nam",
+    "description": "Nhiet doi gio mua can xich dao, nhung nam ngoai anh huong cua gio mua cuc doi, nen nhiet do cao, it bien doi trong nam.",
+    "image": "https://ipfs.io/ipfs/QmUJboYNBr4TNk8RjuVbKXZgVv3pVjLgakcYhVuk3HwfRG/carbon-credit-nft-2.png",
+    "id": "2",
+    "attributes": [
+        {
+            "trait_type": "Area (ha)",
+            "value": 70000
+        },
+        {
+            "trait_type": "Land",
+            "value": "Alluvium"
+        },
+        {
+            "trait_type": "Temperature (Celcius)",
+            "value": "27.5"
+        },
+        {
+            "trait_type": "Fertilizer",
+            "value": "Foliar, organic, microbial"
+        },
+        {
+            "trait_type": "Production quantity (tons/year)",
+            "value": 1120000
+        },
+        {
+            "trait_type": "Amount of Credits",
+            "value": 105000
+        }
+    ]
+}

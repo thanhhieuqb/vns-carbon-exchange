@@ -5,7 +5,8 @@
 // will compile your contracts, add the Hardhat Runtime Environment's members to the
 // global scope, and execute the script.
 
-const ethers = require("hardhat");
+const hre = require("hardhat");
+const { ethers } = require("hardhat");
 
 const tokens = (n) => {
   return ethers.utils.parseUnits(n.toString(), 'ether')
@@ -24,7 +25,7 @@ async function main() {
   console.log(`Minting properties...\n`)
 
   for (let i = 0; i < 3; i++) {
-    const transaction = await carbonCredit.connect(seller).mint(`https://ipfs.io/ipfs/QmQVcpsjrA6cr1iJjZAodYwmPekYgbnXGo4DFubJiLc2EB/${i + 1}.json`)
+    const transaction = await carbonCredit.connect(seller).mint(`https://ipfs.io/ipfs/QmZstyRKAnw7XfrFxR6Zf8HPhmqVjhsJubVRMrxKswzCcF/carbon-credit-nft-${i + 1}.json`)
     await transaction.wait()
   }
 

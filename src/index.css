@@ -18,6 +18,7 @@
 body {
   margin: 0;
   display: grid;
+  height: 100vh;
   grid-column: full;
   grid-template-columns: inherit;
   position: relative;
@@ -166,7 +167,7 @@ header {
 
 .card {
   width: 350px;
-  height: 275px;
+  height: 650px;
 
   border: 1px solid var(--clr-black);
   margin: 10px auto;
@@ -193,9 +194,9 @@ header {
 
 .card__info {
   width: 100%;
-  height: 45%;
+  height: 18%;
 
-  background-color: var(--clr-white);
+  background-color: #3C5539;
 
   padding: 5px 10px;
 
@@ -237,7 +238,6 @@ header {
   align-items: center;
 
   width: 80%;
-  height: 70%;
   margin: 0 auto;
   padding: 20px;
 
@@ -246,8 +246,8 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-
-  background: var(--clr-white);
+  border-radius: 30px;
+  background: #004733;
 }
 
 .credit__image {
@@ -282,8 +282,6 @@ header {
   height: 100%;
   margin: 0 20px;
   padding-right: 40px;
-
-  overflow-y: scroll;
 }
 
 .credit__overview h1,
