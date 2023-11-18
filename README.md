@@ -26,3 +26,18 @@ In a separate terminal execute:
 
 `npx hardhat run scripts/deploy.js --network [network]`
 
+## blokchain resources
+
+### IPFS
+
+[png folder](https://ipfs.io/ipfs/QmUJboYNBr4TNk8RjuVbKXZgVv3pVjLgakcYhVuk3HwfRG)
+
+hash: ipfs://QmUJboYNBr4TNk8RjuVbKXZgVv3pVjLgakcYhVuk3HwfRG
+
+[metadata folder](https://ipfs.io/ipfs/QmZstyRKAnw7XfrFxR6Zf8HPhmqVjhsJubVRMrxKswzCcF)
+
+hash: ipfs://QmZstyRKAnw7XfrFxR6Zf8HPhmqVjhsJubVRMrxKswzCcF
+
+### Ethereum Sepolia testnet
+
+contract address: 

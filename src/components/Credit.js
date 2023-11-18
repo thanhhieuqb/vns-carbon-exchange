@@ -175,13 +175,7 @@ const Credit = ({ credit, provider, account, escrow, togglePop }) => {
                             <li key={index}><strong>{attribute.trait_type}</strong> : {attribute.value}</li>
                         ))}
                     </ul>
-                    <h2>Source</h2>
-
-                    <ul>
-                        {credit.attributes.map((attribute, index) => (
-                            <li key={index}><strong>{attribute.trait_type}</strong> : {attribute.value}</li>
-                        ))}
-                    </ul>
+                    <h2><a href={credit.image}>Source </a></h2>
                 </div>
 
 
