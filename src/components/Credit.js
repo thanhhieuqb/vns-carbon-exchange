@@ -131,7 +131,7 @@ const Credit = ({ credit, provider, account, escrow, togglePop }) => {
                     </p>
                     <p>{credit.address}</p>
 
-                    <h2>{credit.attributes[0].value} ETH</h2>
+                    <h2>{credit.attributes[5].value} Credits</h2>
 
                     {owner ? (
                         <div className='credit__owned'>

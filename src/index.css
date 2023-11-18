@@ -84,7 +84,7 @@ nav {
   height: 50px;
   margin: 0 auto;
 
-  background-color: var(--clr-green);
+  background-color: #54A824;
   color: var(--clr-white);
 
   border: none;
@@ -196,6 +196,7 @@ header {
   width: 100%;
   height: 18%;
 
+  color:#9ADE73;
   background-color: #3C5539;
 
   padding: 5px 10px;
@@ -282,12 +283,14 @@ header {
   height: 100%;
   margin: 0 20px;
   padding-right: 40px;
+  color: #d0c163;
 }
 
 .credit__overview h1,
 .credit__overview h2,
 .credit__overview hr {
   margin: 10px auto;
+  color: #d0c163;
 }
 
 .credit__overview ul {
@@ -299,7 +302,7 @@ header {
 .credit__owned {
   margin: 20px 5px;
 
-  background-color: var(--clr-blue);
+  background-color: #54A824;
   color: var(--clr-white);
 
   border: none;
@@ -319,7 +322,7 @@ header {
 }
 
 .credit__buy:hover {
-  background-color: var(--clr-blue-2);
+  background-color: #294300;
 }
 
 .credit__contact {
@@ -327,14 +330,14 @@ header {
   height: 50px;
 
   background-color: transparent;
-  color: var(--clr-blue);
+  color: #54A824;
 
-  border: 1px solid var(--clr-blue);
+  border: 1px solid #54A824;
 }
 
 .credit__contact:hover {
-  background-color: #f7f7f7;
-  color: var(--clr-blue-2);
+  background-color: #54A824;
+  color: #294300;
 }
 
 .credit__owned {
