@@ -17,7 +17,7 @@ async function main() {
   const [buyer, seller, inspector, lender] = await ethers.getSigners()
 
   // Deploy Carbon Credit
-  const CarbonCredit = await ethers.getContractFactory('CarbonCredit')
+  const CarbonCredit = await hre.ethers.getContractFactory('CarbonCredit')
   const carbonCredit = await CarbonCredit.deploy()
   await carbonCredit.deployed()
 

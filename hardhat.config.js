@@ -1,9 +1,6 @@
 /** @type import('hardhat/config').HardhatUserConfig */
 
 require('dotenv').config();
-require("@nomicfoundation/hardhat-toolbox");
-
-const { API_URL, PRIVATE_KEY } = process.env;
 
 module.exports = {
   solidity: "0.8.1",
@@ -18,11 +15,19 @@ module.exports = {
     sepolia: {
       chainId: 11155111,
       saveDeployments: true,
-      url: API_URL,
-      accounts: process.env.PRIVATE_KEY !== undefined && process.env.PRIVATE_KEY1 !== undefined &&  process.env.PRIVATE_KEY2 !== undefined && process.env.PRIVATE_KEY3 !== undefined ? [process.env.PRIVATE_KEY,process.env.PRIVATE_KEY1,process.env.PRIVATE_KEY2,process.env.PRIVATE_KEY3] : [],
+      url: process.env.API_URL,
+      accounts: [
+        process.env.PRIVATE_KEY,
+        process.env.PRIVATE_KEY1,
+        process.env.PRIVATE_KEY2,
+        process.env.PRIVATE_KEY3,
+      ].filter(Boolean), // Filter out undefined or falsy values
       carbonCredit: {
         address: process.env.CARBON_CREDIT_ADDRESS,
-      }
+      },
+      escrow: {
+        address: process.env.ESCROW_ADDRESS,
+      },
     },
   },
   etherscan: {

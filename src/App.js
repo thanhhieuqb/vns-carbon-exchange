@@ -15,13 +15,21 @@ function App() {
   const [toggle, setToggle] = useState(false);
 
   const loadBlockchainData = async () => {
-try {
+    try {
       await window.ethereum.enable();
+      console.log("Start loading blockchain data");
 
       const provider = new ethers.providers.Web3Provider(window.ethereum);
+      console.log("Provider created");
       setProvider(provider);
 
       const network = await provider.getNetwork()
+      console.log(`Connected to chain ${network.chainId}`);
+      if (!provider) {
+        console.error("Provider is null");
+        return;
+      }
+      
       const chainId = network.chainId;
 
       const contractAddresses = config[chainId];
@@ -30,6 +38,7 @@ try {
       }
   
       const carbonCredit = new ethers.Contract(config[network.chainId].carbonCredit.address, CarbonCredit, provider)
+      console.log("Carbon Credit Address: ", carbonCredit.address);
       const totalSupply = await carbonCredit.totalSupply()
       const credits = []
   
@@ -43,16 +52,18 @@ try {
       setCredits(credits)
   
       const escrow = new ethers.Contract(config[network.chainId].escrow.address, Escrow, provider)
+      console.log("Escrow Address: ", escrow.address);
       setEscrow(escrow)
   
       window.ethereum.on('accountsChanged', async () => {
         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
         const account = ethers.utils.getAddress(accounts[0])
         setAccount(account);
+        console.log("End loading blockchain data");
       })
-} catch (error) {
-  console.error("Error loading blockchain data", error);
-}
+    } catch (error) {
+        console.error("Error loading blockchain data", error);
+      }
   }
 
   useEffect(() => {
