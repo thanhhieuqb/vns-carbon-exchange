@@ -23,6 +23,8 @@ function App() {
       console.log("Provider created");
       setProvider(provider);
 
+      const signer = provider.getSigner();
+
       const network = await provider.getNetwork()
       console.log(`Connected to chain ${network.chainId}`);
       if (!provider) {
